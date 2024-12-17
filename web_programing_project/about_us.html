@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-EaP7Kj6msdU5AfO+Gv5JjK8U1G+JS7VzIvvgu0xVJf4+uE7ULoYq3jK1J4QGzZjJdL0q3TtA/8r1KZGnXyJpCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="about_us.css">
+</head>
+<body>
+    <header class="header">
+        <div class="button-grid">
+            <center>
+                <button class="button-17" id="hom" onclick="document.location='home.html'">Home</button>
+                <button class="button-17" id="reg" onclick="document.location='registeration.html'">Register</button>
+                <button class="button-17" id="log" onclick="document.location='login.html'">Login</button>
+                <button class="button-17" id="cont" onclick="document.location='contact_us.html'">Contact us</button>
+            </center>
+        </div>
+    </header>
+    <center>
+        <h1>About Us</h1>
+    </center>
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>
+                This website was developed by unique developers from FCDS (Faculty Of Computer And Data Science) under supervision and guidance of DR/ saleh Mesbah  || ENG/ sarah , This site was built and developed to be a comprehensive site for any commercial or investment activity.
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img/pic_1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/pic_2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/pic_3.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <center>
+            <a href="https://www.facebook.com" class="button-17" style="background-color: rgb(66, 69, 224);" target="_blank" title=" Visit facebook "> Facebook </a>
+            <a href="https://www.instagram.com" class="button-17" style="background-color: rgb(228, 31, 97);" target="_blank" title=" Visit instagram "> Instagram </a>
+            <a href="https://www.twitter.com" class="button-17" style="background-color: rgb(60, 176, 253);" target="_blank" title="Visit twitter "> Twitter </a>
+            <a href="https://www.youtube.com" class="button-17" style="background-color: rgb(255, 0, 0);" target="_blank" title="Visit youtube "> Youtube </a>
+        </center>
+        <br>
+
+        <footer>
+            <div class="footer-inner">
+                <p>&copy; Web programming project saleh Mesbah      </p>
+            </div>
+        </footer>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+</body>
+</html>

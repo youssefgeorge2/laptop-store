@@ -1,0 +1,243 @@
+﻿h1 {
+    color: snow;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/back.webp');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(244, 244, 248);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+
+.my-button a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-button img {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top:90px;
+}
+
+.container h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dot-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.button-17 {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 60px;
+    border-style: none;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    height: 15px;
+    justify-content: center;
+    letter-spacing: .35px;
+    line-height: normal;
+    max-width: 1000%;
+    overflow: visible;
+    padding: 15px 15px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.button-17:hover {
+    background-color: silver;
+    transition: 0.7s;
+}
+
+.button-17:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.button-17:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-grid button {
+    text-align: center;
+    display: inline-grid;
+    width: 200px;
+    height: 50px;
+    margin: 25px;
+    margin-top: 15px;
+}
+
+footer {
+    color: snow;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+a:link {
+    margin-top:50px;
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
+}

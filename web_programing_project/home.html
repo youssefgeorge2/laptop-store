@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <header>
+        <div class="button-grid">
+            <center>
+                <button class="button-17" id="reg" onclick="document.location='registeration.html'">Register</button>
+                <button class="button-17" id="log" onclick="document.location='login.html'">Login</button>
+                <button class="button-17" id="cont" onclick="document.location='contact_us.html'">Contact us</button>
+                <button class="button-17" id="ab" onclick="document.location='about_us.html'">About us</button>
+            </center>
+        </div>
+    </header>
+        <center>
+            <h1>Welcome to our website</h1>
+        </center>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="home.js"></script>
+</head>
+
+<body>
+    
+    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="img/p1.JPEG" class="product-thumb" alt="">
+                <button class="card-btn" onclick="document.location='login.html'" >Add to cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Lenovo</h2>
+                <p class="product-short-des">Legion 7</p>
+                <span class="price">50 000 LE</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="img/p3.JPEG" class="product-thumb" alt="">
+                <button class="card-btn" onclick="document.location='login.html'" >Add to cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Lenovo</h2>
+                <p class="product-short-des">Thin book</p>
+                <span class="price">40 000 LE</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="img/p4.JPEG" class="product-thumb" alt="">
+                <button class="card-btn" onclick="document.location='login.html'" >Add to cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Hp</h2>
+                <p class="product-short-des">Pavellion</p>
+                <span class="price">20 000 LE</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="img/p6.JPEG" class="product-thumb" alt="">
+                <button class="card-btn" onclick="document.location='login.html'" >Add to cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Hp</h2>
+                <p class="product-short-des">Omen</p>
+                <span class="price">40 000 LE</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="img/p7.JPEG" class="product-thumb" alt="">
+                <button class="card-btn" onclick="document.location='login.html'" >Add to cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Dell</h2>
+                <p class="product-short-des">G3</p>
+                <span class="price">25 000 LE</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="img/p8.JPEG" class="product-thumb" alt="">
+                <button class="card-btn" onclick="document.location='login.html'" >Add to cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Dell</h2>
+                <p class="product-short-des">G5</p>
+                <span class="price">30 000 LE</span>
+            </div>
+        </div>
+
+
+    </div>
+
+<footer>
+        <div class="footer-inner">
+            <p>&copy; Web programming project Saleh Mesbah</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const preBtn = document.querySelector(".pre-btn");
+        const nxtBtn = document.querySelector(".nxt-btn");
+        const productContainer = document.querySelector(".product-container");
+        const productCards = document.querySelectorAll(".product-card");
+        const cardWidth = productCards[0].offsetWidth;
+        let cardCount = 0;
+
+        nxtBtn.addEventListener("click", () => {
+            cardCount++;
+            if (cardCount > productCards.length - 3) {
+                cardCount = productCards.length - 3;
+            }
+            productContainer.style.transform = `translateX(-${cardWidth * cardCount}px)`;
+        });
+
+        preBtn.addEventListener("click", () => {
+            cardCount--;
+            if (cardCount < 0) {
+                cardCount = 0;
+            }
+            productContainer.style.transform = `translateX(-${cardWidth * cardCount}px)`;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="contact_us.css">
+</head>
+<body>
+    <header>
+        <div class="button-grid">
+            <center>
+                <button class="button-17" id="hom" onclick="document.location='home.html'">Home</button>
+                <button class="button-17" id="reg" onclick="document.location='registeration.html'">Register</button>
+                <button class="button-17" id="log" onclick="document.location='login.html'">Login</button>
+                <button class="button-17" id="cont" onclick="document.location='about_us.html'">About us</button>
+            </center>
+        </div>
+    </header>
+    
+    <center><h1>Contact Us</h1></center>
+    <h2>Make yourself comfortable to contact us any time :)</h2>
+
+    <!-- Form for collecting user information -->
+    <form action="submit_contact_form.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; Web programming project Saleh Mesbah</p>
+        </div>
+    </footer>
+
+</body>
+</html>
